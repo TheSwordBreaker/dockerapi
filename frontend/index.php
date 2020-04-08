@@ -28,7 +28,7 @@
     <script> 
         $(document).ready(function() { 
             $("button").click(function() { 
-                $.ajax({url: http://product-service/,  
+                $.ajax({url: "http://product-service/",  
                         success: function(result) { 
                     $("#h11").html(result); 
                 }}); 
