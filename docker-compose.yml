@@ -8,7 +8,7 @@ services:
     volumes:
       - ./product:/var/www/html
     ports:
-      - 8101:80
+      - 8080:80
 
   website:
     build: ./frontend
