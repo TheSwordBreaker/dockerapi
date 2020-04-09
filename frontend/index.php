@@ -29,11 +29,20 @@
         $(document).ready(function() { 
             $("button").click(function() { 
                 $.ajax({url: "http://product-service/",  
+                    headers: {
+    // Set any custom headers here.
+    // If you set any non-simple headers, your server must include these
+    // headers in the 
+    'Access-Control-Allow-Headers' : "*"
+    // response header.
+  },
                         success: function(result) { 
                     $("#h11").html(result); 
                 }}); 
             }); 
         }); 
+
+        
     </script> 
 </body> 
   
