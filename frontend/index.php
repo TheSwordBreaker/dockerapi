@@ -28,7 +28,7 @@
     <script> 
         $(document).ready(function() { 
             $("button").click(function() { 
-                $.ajax({url: "http://"+document.location.hostname+":8101/",  
+                $.ajax({url: "http://"+document.location.hostname+":8080/",  
 //                     headers: {
 //     // Set any custom headers here.
 //     // If you set any non-simple headers, your server must include these
