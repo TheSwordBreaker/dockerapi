@@ -38,6 +38,8 @@
 //   },
                         success: function(result) { 
                     $("#h11").html(result); 
+                },error: function(result) { 
+                    $("#h11").html("not working"); 
                 }
                 
                 
