@@ -29,16 +29,19 @@
         $(document).ready(function() { 
             $("button").click(function() { 
                 $.ajax({url: "http://"+document.location.hostname+":8101/",  
-                    headers: {
-    // Set any custom headers here.
-    // If you set any non-simple headers, your server must include these
-    // headers in the 
-    'Access-Control-Allow-Headers' : "*"
-    // response header.
-  },
+//                     headers: {
+//     // Set any custom headers here.
+//     // If you set any non-simple headers, your server must include these
+//     // headers in the 
+//     'Access-Control-Allow-Headers' : "*"
+//     // response header.
+//   },
                         success: function(result) { 
                     $("#h11").html(result); 
-                }}); 
+                }
+                
+                
+                }); 
             }); 
         }); 
 
